@@ -2,7 +2,7 @@
 const Binary = document.getElementById("Binary");
 const Octal = document.getElementById("octal");
 const Hexadecimal = document.getElementById("hexadecimal");
-const submit = document.getElementById("submit");
+const convert = document.getElementById("convert");
 const numberInput = document.getElementById("numberDecimal");
 
 // Function to handle button click
@@ -31,4 +31,4 @@ function binary(e) {
   Hexadecimal.innerText = hexadecimalNumber;
 }
 
-submit.addEventListener("click", binary);
+convert.addEventListener("click", binary);
