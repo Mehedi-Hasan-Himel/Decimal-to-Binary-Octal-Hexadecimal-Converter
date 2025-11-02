@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Decimal to Binary - Octal - Hexadecimal Converter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/60e9510ec4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    class="bg-indigo-500 text-white font-semibold font-[Poppins] min-h-screen flex flex-col items-center justify-center"
+  >
+    <main class="flex items-center justify-center my-10 bg-center bg-cover">
+      <div class="p-8 shadow-xl bg-white/80 md:p-12 rounded-2xl">
+        <form class="space-y-6">
+          <h2
+            class="text-2xl font-semibold text-center text-gray-800 "
+          >
+            Decimal to  <span class="text-4xl"></br> Binary - Octal - Hexadecimal </br></span> Converter
+          </h2>
+
+          <!-- Input field -->
+          <div class="flex items-center justify-center gap-4">
+            <input
+              type="number"
+              id="numberDecimal"
+              placeholder="Enter a Decimal Number"
+              class="w-full px-4 py-3 text-black transition border border-gray-300 rounded-lg outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-200"
+            />
+            <!-- Button -->
+            <div class="text-center">
+              <button
+                id="submit"
+                class="w-full px-3 py-3 font-semibold text-white transition bg-indigo-600 rounded-lg hover:bg-indigo-700 active:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              >
+                Convert
+              </button>
+            </div>
+          </div>
+
+          <!-- Binary Start -->
+          <article class="px-4 py-4 bg-gray-100 rounded-lg shadow-inner">
+            <div class="flex font-mono text-xl text-gray-700">
+              <h1>Binary:&nbsp</h1>
+              <h1 id="Binary">Binary Value</h1>
+            </div>
+          </article>
+          <!-- Binary End -->
+
+          <article class="px-4 py-4 bg-gray-100 rounded-lg shadow-inner">
+            <div class="flex font-mono text-xl text-gray-700">
+              <h1>Octal:&nbsp</h1>
+              <h1 id="octal">Octal Value</h1>
+            </div>
+          </article>
+          <article class="px-4 py-4 bg-gray-100 rounded-lg shadow-inner">
+            <div class="flex font-mono text-xl text-gray-700">
+              <h1>Hexadecimal:&nbsp</h1>
+              <h1 id="hexadecimal">Hexadecimal Value</h1>
+            </div>
+          </article>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="">
+      <p class="text-sm">
+        Decimal to Binary - Octal - Hexadecimal Converter | HTML + TailwindCSS &
+        JavaScript DOM. &copy; 2025 Mehedi Hasan Himel
+      </p>
+    </footer>
+
+    <!-- JS -->
+    <script src="./script/app.js"></script>
+  </body>
+</html>
